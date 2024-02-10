@@ -1,7 +1,5 @@
-def find_majority(arr):
-    count_dict = {}
-    for num in arr:
-        if num in count_dict:
-            count_dict[num] += 1
-        else:
-            count_dict[num] = 1
+majority_count = len(arr) // 2
+    for num, count in count_dict.items():
+        if count > majority_count:
+            return num
+    return None
